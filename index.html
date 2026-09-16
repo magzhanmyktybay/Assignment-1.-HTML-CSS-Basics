@@ -1,113 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title>My First Web Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <meta charset="UTF-8">
     </head>
     <body>
         <table>
             <tr>
-                <td>
-                    <h3>Menu</h3>
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Schedule</li>
-                        <li>Contact</li>
+                <td class="menu-col">
+                    <h3 id="menu-title">Menu</h3>
+                    <ul id="menu">
+                        <a href="#home"><li class="menu-list">Home</li></a>
+                        <a href="#about-me"><li class="menu-list">About</li></a>
+                        <a href="#schedule"><li class="menu-list">Schedule</li></a>
+                        <a href="#form"><li class="menu-list">Contact</li></a>
                     </ul>
                 </td>
                 <td>
-                    <h1>Magzhan Myktybay</h1>
-                    <h2>SE-2540</h2>
-                    <img src="myphoto.png" alt="My photo" width="200" height="200">
-                    <h3>About me:</h3>
-                    <p>An aspiring yet talented software engineer with big ambitions.</p>
-                    <h3>My hobbies:</h3>
-                    <ol>
-                        <li>Programming</li>
-                        <li>Video games</li>
-                        <li>Training</li>
-                    </ol>
-                    <h3>My favorite websites:</h3>
-                    <ul>
-                        <li><a href="https://www.youtube.com/">YouTube</a></li>
-                        <li><a href="https://www.google.com/">Google</a></li>
-                        <li><a href="https://store.steampowered.com/">Steam</a></li>
-                    </ul>
-                    <button>Click Me</button>
-                    <h3>My schedule:</h3>
-                    <table>
-                        <tr>
-                            <th>Subject</th>
-                            <th>Day</th>
-                            <th>Time</th>
-                        </tr>
-                        <tr>
-                            <td>Design and Analysis of Algorithms</td>
-                            <td>Monday</td>
-                            <td>6:00 PM - 7:50 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Russian Language 1 (C1)</td>
-                            <td>Tuesday</td>
-                            <td>4:00 PM - 5:50 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Design and Analysis of Algorithms</td>
-                            <td>Wednesday</td>
-                            <td>12:00 PM - 12:50 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Software Design Patterns</td>
-                            <td>Wednesday</td>
-                            <td>2:00 PM - 3:50 PM</td>
-                        </tr>
-                        <tr>
-                            <td>WEB Technologies</td>
-                            <td>Thursday</td>
-                            <td>1:05 PM - 1:55 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Design and Analysis of Algorithms</td>
-                            <td>Thursday</td>
-                            <td>2:00 PM - 3:50 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Software Design Patterns</td>
-                            <td>Thursday</td>
-                            <td>6:00 PM - 6:50 PM</td>
-                        </tr>
-                        <tr>
-                            <td>WEB Technologies</td>
-                            <td>Friday</td>
-                            <td>2:00 PM - 3:50 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Software Design Patterns</td>
-                            <td>Friday</td>
-                            <td>6:00 PM - 7:50 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Operating Systems</td>
-                            <td>Saturday</td>
-                            <td>3:00 PM - 5:50 PM</td>
-                        </tr>
-                    </table>
-                    <h3>My mood today:</h3>
-                    <p>Today I feel happy &#128522;, motivated &#128170;, and ready for coding &#128187;.</p>
-                    <form>
-                        <label for="name">Name:</label>
-                        <br>
-                        <input type="text" id="name" name="name">
-                        <br>
-                        <label for="email">Email:</label>
-                        <br>
-                        <input type="email" id="email" name="email">
-                        <br>
-                        <label for="color">Favorite Color:</label>
-                        <input type="color" id="color" name="color">
-                        <br>
-                        <input type="submit" value="Submit">
-                    </form>
+                    <div class="site-header" id="home">
+                            <h1 id="main-heading">Magzhan Myktybay</h1>
+                            <h2>SE-2540</h2>
+                            <img class="photo-frame" src="myphoto.png" alt="My photo" width="200" height="200">
+                            <h3 class="highlight" id="about-me">About me:</h3>
+                            <p>An aspiring yet talented software engineer with big ambitions.</p>
+                        </div>
+                        <div class="site-main">
+                        <h3 class="highlight">My hobbies:</h3>
+                        <ol>
+                            <li>Programming</li>
+                            <li>Video games</li>
+                            <li>Training</li>
+                        </ol>
+                        <h3>My favorite websites:</h3>
+                        <ul>
+                            <li><a href="https://www.youtube.com/">YouTube</a></li>
+                            <li><a href="https://www.google.com/">Google</a></li>
+                            <li><a href="https://store.steampowered.com/">Steam</a></li>
+                        </ul>
+                        <button>Click Me</button>
+                        <h3 id="schedule">My schedule:</h3>
+                        <table class="schedule-table">
+                            <tr>
+                                <th>Subject</th>
+                                <th>Day</th>
+                                <th>Time</th>
+                            </tr>
+                            <tr>
+                                <td>Design and Analysis of Algorithms</td>
+                                <td>Monday</td>
+                                <td>6:00 PM - 7:50 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Russian Language 1 (C1)</td>
+                                <td>Tuesday</td>
+                                <td>4:00 PM - 5:50 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Design and Analysis of Algorithms</td>
+                                <td>Wednesday</td>
+                                <td>12:00 PM - 12:50 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Software Design Patterns</td>
+                                <td>Wednesday</td>
+                                <td>2:00 PM - 3:50 PM</td>
+                            </tr>
+                            <tr>
+                                <td>WEB Technologies</td>
+                                <td>Thursday</td>
+                                <td>1:05 PM - 1:55 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Design and Analysis of Algorithms</td>
+                                <td>Thursday</td>
+                                <td>2:00 PM - 3:50 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Software Design Patterns</td>
+                                <td>Thursday</td>
+                                <td>6:00 PM - 6:50 PM</td>
+                            </tr>
+                            <tr>
+                                <td>WEB Technologies</td>
+                                <td>Friday</td>
+                                <td>2:00 PM - 3:50 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Software Design Patterns</td>
+                                <td>Friday</td>
+                                <td>6:00 PM - 7:50 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Operating Systems</td>
+                                <td>Saturday</td>
+                                <td>3:00 PM - 5:50 PM</td>
+                            </tr>
+                        </table>
+                        <h3>My mood today:</h3>
+                        <p class="note">Today I feel happy &#128522;, motivated &#128170;, and ready for coding &#128187;.</p>
+                        <h3>CSS Positioning Demo:</h3>
+                        <div class="position-demo">
+                            <div class="box box-static">Static</div>
+                            <div class="box box-relative">Relative</div>
+                            <div class="box box-absolute">Absolute</div>
+                        </div>
+                        <h3>Float Demo:</h3>
+                        <div class="float-demo">
+                            <div class="float-box float-left-box">Float Left</div>
+                            <div class="float-box float-right-box">Float Right</div>
+                            <div class="clear-fix"></div>
+                            <p>This paragraph sits cleanly below both boxes because of <code>clear: both;</code></p>
+                        </div>
+                        <form id="form" class="contact-form">
+                            <label for="name">Name:</label>
+                            <br>
+                            <input type="text" id="name" name="name">
+                            <br>
+                            <label for="email">Email:</label>
+                            <br>
+                            <input type="email" id="email" name="email">
+                            <br>
+                            <label for="color">Favorite Color:</label>
+                            <input type="color" id="color" name="color">
+                            <br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <div class="site-footer"><p>&copy; 2026 Magzhan Myktybay.</p></div>
                 </td>
             </tr>
         </table>
